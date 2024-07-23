@@ -77,8 +77,31 @@ console.log(typeof number2);
 
 
 if (answer == "martin" || answer == "johanis"  || answer == "Martin"){
-    document.write("true")
+    document.write("true");
 }
 else {
-    document.write("false")
+    document.write("false");
 }
+
+
+
+
+let number1 = prompt ("Quelle est votre premier nombre ?");
+number1 =parseInt(number1);
+let number3 = prompt ("Quelle est votre deuxieme nombre ?");
+number3 =parseInt(number3);
+let operator = prompt ("Quelle est votre operateur ?");
+let result;
+if(operator == "-" ){
+    result = number1 - number3;
+}
+if(operator == "*" ){
+    result = number1 * number3;
+}
+if(operator == "+" ){
+    result = number1 + number3;
+}
+if(operator == "/" ){
+    result = number1 / number3;
+}
+document.write(result)
